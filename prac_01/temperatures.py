@@ -15,19 +15,17 @@ def main():
         if choice == "C":
             celsius = float(input("Celsius: "))
             fahrenheit = celsius_to_fahrenheit(celsius)
-        print("Result: {:.2f} F".format(fahrenheit))
+            print("Result: {:.2f} F".format(fahrenheit))
         elif choice == "F":
-        fahrenheit = float(input("Fahrenheit: "))
-        # Hint: celsius = 5 / 9 * (fahrenheit - 32)
-        celsius = fahrenheit_to_celsius(fahrenheit)
-    print("Result: {:.2f} C".format(celsius))
-    # Remove the "pass" statement when you are done. It's a placeholder.
-    else:
-    print("Invalid option")
+            fahrenheit = float(input("Fahrenheit: "))
+            celsius = fahrenheit_to_celsius(fahrenheit)
+            print("Result: {:.2f} C".format(celsius))
+        else:
+            print("Invalid option")
+    print(MENU)
+    choice = input(">>> ").upper()
 
 
-print(MENU)
-choice = input(">>> ").upper()
 print("Thank you.")
 
 
