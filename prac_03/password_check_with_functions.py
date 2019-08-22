@@ -1,19 +1,22 @@
 '''John Nurthen'''
-min_length = int(3)
+MIN_LENGTH = 3
 
 
-def main()
+def main():
+    password = get_password()
+    print_password_as_stars(password)
 
 
-def get_password()
+def get_password():
     password = input('Please enter your Password: ')
-    password_length = len(password)
-    while password_length < min_length:
+    while len(password) < MIN_LENGTH:
         print('Password must be between 3 and 10 characters')
-    password = input('Please enter a valid Password: ')
-    password_length = len(password)
+        password = input('Please enter a valid Password: ')
+    return password
 
 
-print('*' * password_length)
+def print_password_as_stars(password):
+    print('*' * len(password))
+
 
 main()
