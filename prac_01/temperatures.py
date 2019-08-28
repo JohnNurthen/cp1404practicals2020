@@ -22,11 +22,9 @@ def main():
             print("Result: {:.2f} C".format(celsius))
         else:
             print("Invalid option")
-    print(MENU)
-    choice = input(">>> ").upper()
-
-
-print("Thank you.")
+        print(MENU)
+        choice = input(">>> ").upper()
+    print("Thank you.")
 
 
 def celsius_to_fahrenheit(celsius):
