@@ -4,7 +4,6 @@ Broken program to determine score status
 """
 
 
-
 def main():
     score = float(input("Enter score: "))
     print(determine_grade(score))
@@ -19,5 +18,6 @@ def determine_grade(score):
         return "Passable"
     else:
         return "Excellent"
+
 
 main()
