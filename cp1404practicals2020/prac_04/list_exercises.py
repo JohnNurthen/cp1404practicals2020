@@ -16,5 +16,4 @@ name = input("Enter your username: ")
 if name in usernames:
     print("Access Granted")
 else:
-    print("Access Denied"
-          "")
+    print("Access Denied")
